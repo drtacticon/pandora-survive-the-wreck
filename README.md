@@ -25,3 +25,11 @@ This is a streamlined, noncommercial fan adaptation, not an exact rules implemen
 ## Development
 
 Static HTML/CSS/JavaScript with no build step. Serve the game directory using any static web server. `engine.js` contains testable game rules; `game.js` handles the interface. No external game libraries or server are required. Google Fonts are optional; system fallbacks work offline.
+
+## Personnel, equipment, and discovery
+
+Click a visible crew or bot chit for name, rank/position, specialty, live statistics, carried items and weapons, and controlled bots. Unsearched pods (including starting pods) are gray. Hull damage tints spaces light red. Contents of unsearched pods are absent from the map and bot roster; specimens still move and attack while hidden. Search or use a Scanner/Reconbot to discover pods. Loose equipment uses original chits and can be picked up or dropped for one action. Shared ship stores remain separate from carried equipment. Existing version-two missions migrate without losing progress.
+
+Hull-damaged rooms must be repaired before they can be searched. Remote scans also skip damaged rooms.
+
+New missions place the two hull breaches in pods A2 and C4. Existing saved missions retain their current breach locations and progress.
