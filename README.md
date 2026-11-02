@@ -33,3 +33,5 @@ Click a visible crew or bot chit for name, rank/position, specialty, live statis
 Hull-damaged rooms must be repaired before they can be searched. Remote scans also skip damaged rooms.
 
 New missions place the two hull breaches in pods A2 and C4. Existing saved missions retain their current breach locations and progress.
+
+Right-click a visible monster, room, bot, item, or crew member to inspect it without taking an action or changing the selected crew member. Hidden records remain inaccessible. Touch users can use Room details, item Details buttons, and specimen taps.
