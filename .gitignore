@@ -1,0 +1,3 @@
+upgrade-*.cjs
+build-portraits.py
+.qa/
