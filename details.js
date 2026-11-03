@@ -7,7 +7,7 @@ window.PandoraDetails=(function(){
   const unitArt=u=>P.bot(u)?'Bot_'+u.name+'.png':'Crew_'+u.id+'.png';
   function close(){if(by('info-dialog').open)by('info-dialog').close()}
   function open(title,image,kind,content){by('info-dialog').classList.toggle('specimen-card',kind==='BIOLOGICAL SPECIMEN');
-    by('info-content').innerHTML=`<button class="profile-dismiss" data-close-info aria-label="Close information window">×</button><div class="unit-profile-heading">${image?`<img src="${art(image)}" alt="${safe(title)} chit">`:'<span class="room-record-icon" aria-hidden="true">▱</span>'}<div><div class="kicker">${safe(kind)}</div><h2 id="info-name" tabindex="-1" autofocus>${safe(title)}</h2></div></div>${content}<div class="dialog-actions"><button data-close-info class="primary">Close information</button></div>`;
+    by('info-content').innerHTML=`<button class="profile-dismiss" data-close-info aria-label="Close information window">×</button><div class="unit-profile-heading">${image?`<img src="${art(image)}" alt="${safe(title)} ${kind==='BIOLOGICAL SPECIMEN'?'illustration':'chit'}">`:'<span class="room-record-icon" aria-hidden="true">▱</span>'}<div><div class="kicker">${safe(kind)}</div><h2 id="info-name" tabindex="-1" autofocus>${safe(title)}</h2></div></div>${content}<div class="dialog-actions"><button data-close-info class="primary">Close information</button></div>`;
     if(!by('info-dialog').open)by('info-dialog').showModal();by('info-name').focus({preventScroll:true});by('info-dialog').scrollTop=0;
   }
   function room(id){
